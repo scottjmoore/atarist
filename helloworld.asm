@@ -1,5 +1,6 @@
     SECTION TEXT
 
+Entry:
     lea Message,a3
     jsr PrintString
     jsr NewLine
@@ -8,7 +9,8 @@
     trap #1
     addq.l #2,sp
 
-    rts 
+.Loop
+    jmp .Loop
 
 Message:
     db 'Hello World!',$0d,$0a,"From the Atari ST and Scott Moore!",$0d,$0a,"One more line goes here ;-)",$0d,$0a,$00
