@@ -11,7 +11,7 @@
     rts 
 
 Message:
-    db 'Hello World!',$0d,$0a,"From the Atari ST and Scott Moore!",$0d,$0a,$00
+    db 'Hello World!',$0d,$0a,"From the Atari ST and Scott Moore!",$0d,$0a,"One more line goes here ;-)",$0d,$0a,$00
 
     align 2
 
