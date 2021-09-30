@@ -1,6 +1,5 @@
-    SECTION TEXT
+    Code
 
-Entry:
     lea Message,a3
     jsr PrintString
     jsr NewLine
